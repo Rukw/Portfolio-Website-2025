@@ -1,3 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* spacing */
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+
+  /* font families */
+  --font-roboto: "Roboto", sans-serif; 
+  --font-sans: "system-ui", Avenir, Helvetica, Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  --font-serif: "Georgia", Cambria, "Times New Roman", Times, serif;
+  --font-heading: var(--font-sans);
+  --font-body: var(--font-sans);
+
+  /* font sizes */
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.75rem;
+
+/* color */
+  --color-*: initial;
+  --color-white: #fff;
+  --color-purple: #3f3cbb;
+  --color-midnight: #121063;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+  --color-black: #000;
+}
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,10 +54,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  background-color: #242424; 
-}
-
 a {
   font-weight: 500;
   color: #646cff;
@@ -28,8 +65,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
